@@ -18,10 +18,18 @@ Please refer to the manuscript methodology for details.
 **How to Run**:
 
 The working directory should contain the following Python scripts:
-- PXS_preprocessing.py (DICOM pre-processing for inputs, same as applied in the CheXpert database)
-- PXS_train.py (script for pre-training with CheXpert)
-- PXS_train_tuning.py (script for training with CXRs from patients with COVID-19)
+
 - PXS_classes.py (Python helper classes)
+
+(1) - for pre-training on CheXpert data
+- PXS_label_processor.py (for processing CheXpert labels for input into PXS_train.py)
+- PXS_train.py (script for pre-training with CheXpert)
+
+(2) - for training on COVID-19 data
+- PXS_preprocessing.py (DICOM pre-processing for inputs, same as applied in the CheXpert database)
+- PXS_train_tuning.py (script for training with CXRs from patients with COVID-19)
+
+(3) - for testing on COVID-19 data
 - PXS_test.py (script for testing performance)
 
 Run the scripts in an interactive shell, like IPython. 
