@@ -1,5 +1,5 @@
 '''
-Siamese neural network implementation for CXRs
+Siamese neural network implementation for pre-training on CheXpert x-rays, using binary labels for the presence of disease
 
 '''
 
@@ -25,7 +25,7 @@ import pickle
 from tqdm import tqdm
 
 # WORKING DIRECTORY
-working_path = '/home/home/ken.chang/mnt/2015P002510/Matt/PXS_score/'
+working_path = '/home/PXS_score/'
 os.chdir(working_path)
 
 # custom classes
@@ -40,12 +40,12 @@ device = torch.device("cuda:0" if use_cuda else "cpu")
 Load imaging data with annotations
 '''
  
-# annotations
+# annotations - from PXS_label_processor.py
 training_table = pd.read_csv(working_path + 'chexpert_train_updated.csv')
 validation_table = pd.read_csv(working_path + 'chexpert_valid_updated.csv')
 
-# processed image directory
-image_dir = '/home/home/ken.chang/mnt/2015P002510/Public_Datasets/chexpert/'
+# processed image directory - where ChexPert full image size dataset is stored
+image_dir = '/home/Public_Datasets/chexpert/'
 
 # TRAINING DATA 
 
@@ -332,17 +332,4 @@ plt.plot(range(0, len(history[1])), history[1], label = "Validation loss")
 plt.legend(frameon=False)
 plt.savefig(output_dir + "/Learning_curve.png")
 plt.close()
-
-  
-
-'''
-Testing scripts
-'''
-
-img0, img1, label, meta = next(iter(training_dataloader))
-concatenated = torch.cat((img0, img1),0)
-cat = torchvision.utils.make_grid(concatenated, nrow = 16) # make the nrow the batch size
-torchvision.utils.save_image(cat, 'testcat.jpg')
-
-
 
