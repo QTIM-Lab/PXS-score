@@ -4,7 +4,7 @@ Chest radiographs (CXRs) are frequently acquired in patients with COVID-19. Whil
 
 Training the convolutional siamese neural network is performed in two steps: (1) pre-training on CheXpert CXRs using weak labels using contrastive loss and (2) training on CXRs from patients with COVID-19 with disease severity labels using mean square error loss.
 
-This work is released as a preprint on medRxiv https://www.medrxiv.org/content/10.1101/2020.05.20.20108159v1 and has been accepted for publication in Radiology Artificial Intelligence (in press). It builds on work published in npj Digital Medicine entitled "Siamese neural networks for continuous disease severity evaluation and change detection in medical imaging" (https://doi.org/10.1038/s41746-020-0255-1).
+This work is released as a preprint on medRxiv https://www.medrxiv.org/content/10.1101/2020.05.20.20108159v1 and has been accepted for publication (in press). It builds on work published in npj Digital Medicine entitled "Siamese neural networks for continuous disease severity evaluation and change detection in medical imaging" (https://doi.org/10.1038/s41746-020-0255-1).
 
 Please refer to the manuscript methodology for details. 
 
@@ -38,7 +38,9 @@ Run the scripts in an interactive shell, like IPython.
 
 If you use this code in your work, please cite: 
 
-Li MD, Arun NT, Gidwani M, Chang K, Deng F, Little BP, Mendoza DP, Lang M, Lee SI, O’Shea A, Parakh A, Singh P, Kalpathy-Cramer J. Automated assessment and tracking of COVID-19 pulmonary disease severity on chest radiographs using convolutional Siamese neural networks. Radiol Artif Intell 2020 (accepted in press).
+https://www.medrxiv.org/content/10.1101/2020.05.20.20108159v1
+
+The paper has been accepted for peer-reviewed publication and is in press, which will replace this pre-print.
 
 **Acknowledgments**:
 
