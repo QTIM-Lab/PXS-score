@@ -4,7 +4,7 @@ Chest radiographs (CXRs) are frequently acquired in patients with COVID-19. Whil
 
 Training the convolutional siamese neural network is performed in two steps: (1) pre-training on CheXpert CXRs using weak labels using contrastive loss and (2) training on CXRs from patients with COVID-19 with disease severity labels using mean square error loss.
 
-This work is released as a preprint on medRxiv https://www.medrxiv.org/content/10.1101/2020.05.20.20108159v1 and has been accepted for publication (in press). It builds on work published in npj Digital Medicine entitled "Siamese neural networks for continuous disease severity evaluation and change detection in medical imaging" (https://doi.org/10.1038/s41746-020-0255-1).
+This work is published as "Automated Assessment and Tracking of COVID-19 Pulmonary Disease Severity on Chest Radiographs using Convolutional Siamese Neural Networks" in Radiology: Artificial Intelligence (Li et al. 2020, https://pubs.rsna.org/doi/10.1148/ryai.2020200079). It builds on work published in npj Digital Medicine entitled "Siamese neural networks for continuous disease severity evaluation and change detection in medical imaging" (https://doi.org/10.1038/s41746-020-0255-1).
 
 Please refer to the manuscript methodology for details. 
 
@@ -38,9 +38,9 @@ Run the scripts in an interactive shell, like IPython.
 
 If you use this code in your work, please cite: 
 
-https://www.medrxiv.org/content/10.1101/2020.05.20.20108159v1
+Matthew D. Li, Nishanth Thumbavanam Arun, Mishka Gidwani, Ken Chang, Francis Deng, Brent P. Little, Dexter P. Mendoza, Min Lang, Susanna I. Lee, Aileen O’Shea, Anushri Parakh, Praveer Singh, and Jayashree Kalpathy-Cramer. Automated Assessment and Tracking of COVID-19 Pulmonary Disease Severity on Chest Radiographs using Convolutional Siamese Neural Networks. Radiology: Artificial Intelligence 2020 2:4.
 
-The paper has been accepted for peer-reviewed publication and is in press, which will replace this pre-print.
+(https://pubs.rsna.org/doi/10.1148/ryai.2020200079)
 
 **Acknowledgments**:
 
